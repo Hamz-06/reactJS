@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #262834;
+  height: 100vh;
 }
 
 .App-logo {
@@ -28,12 +29,7 @@
 .App-link {
   color: #61dafb;
 }
-.clickMeCenter{
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 @keyframes App-logo-spin {

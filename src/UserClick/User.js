@@ -1,47 +1,46 @@
 //This is a component and needs to be a capital letter when calling
 import './User.css';
-import Circle from'./Circle.js';
+import Userinfo from'./Userinfo.js';
 import React, {useState} from 'react';
 
 function User(){
-    const name = ["jake", "drake", "Lake", "sake"];
-    
+    const style = 'pink';
+       
+      
 
+    const listOfNames = ["Click","The", "Last", "BOX"]
     //initiate circles to circle1 using state 
     //left hand side is default. We can use update circle to update the state
-    const [circles, updateCircle] = useState(()=>{
+    const [circles, updateInfo] = useState(()=>{
         //creating a function inside use state only runs once
         return [];
     });
-
+ 
     //add circles called by button
-    function addCircles(){
+    function addInfoBox(){
         //this keeps all other circles and adds sample to it. 
         
         if(circles.length!=4){
-                
-            updateCircle([...circles, name[circles.length]]);
-           
+
+            updateInfo([...circles,listOfNames[circles.length]]);
+          
+         
         }
 
-        //you can also have it so it updates the circle
-        //updateCircle(["Sample"])
     }
-
-    
-
-    
+ 
     return (
         <>
+        
             
-            <button className="mainButton" onClick={addCircles} >
+            <button className="mainButton" onClick={addInfoBox} >
                 <div>Click Me</div>
             </button>
             
 
             {circles.map((items)=>(
                 
-                <Circle userInfo ="mac" text = {items}/>
+                <Userinfo text = {items}/>
             ))}
             
 

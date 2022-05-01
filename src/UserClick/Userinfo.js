@@ -1,19 +1,24 @@
 import React from 'react';
-import './Circle.css';
-function Circle(props){
+import './Userinfo.css';
+
+function Infobox(props){
     
     const leftCord = {left:'10px'};
 
+
+
     return(
         <>  
-        <div className='mainDivCircles'>
-        
+        <div className='mainDivInfoboxs'>
            
+
             <h1 className = 'mainDivText'>{props.text}</h1>
-            <p1>{props.userInfo}</p1>
+            <h2>{props.style}</h2>
+            
+
 
         </div>
         </>
     );
 }
-export default Circle;
+export default Infobox;  
