@@ -1,18 +1,32 @@
 import logo from './logo.svg';
-import './App.css';
-import User from './UserClick/User';
+import Review from './review/Review.js'
+import './App.css'
+import ApiReview from './apiReview/ApiReview.js'
 
-
+// ffb900
+// #262834
 function App() {
-  const msg = <h1>Equals</h1>
+  const information = "This data was passed from parent to child, this is a container"
+
   return (
-  
-    <div className="App">
-      <User />
-      <div className ="clickMeCenter">
+    <>
+    <div className='App'>
+
+      <h1>Welcome to my creation</h1>
+      <div className="middle">
         
+      <Review name ="Mohammad Hamzah Iqbal" info = {information}/>
+      <ApiReview />
+      
+      <Review />
+
       </div>
+
+
     </div>
+    
+    
+    </>
   );
 }
 
