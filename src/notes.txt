@@ -1,0 +1,23 @@
+Classes in react 
+-> With classes we can use a constructor
+
+-> We need to extend react component
+
+class Clock extends React.Component {
+    //render -> clock can also use a constructor we pass in props for this 
+    constructor(props){
+        super(props)
+    } 
+
+  render() {
+      /return html div 
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+
+FIND OUT DIFF BETWEEN USE STATE AND SET STATE

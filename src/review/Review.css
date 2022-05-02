@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
 }
 .changeColorReview{
     background-color: #262834;
@@ -35,4 +36,26 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
 }
+
+
+.info:hover{
+    
+    font-size: large;
+}
+
+.dontShow{
+    display: none;
+}
+
+.showInput{
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 10%;
+    width: 90%;
+
+}
+.showInput:focus {
+    border: 3px solid grey;
+  }

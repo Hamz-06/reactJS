@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Review from './review/Review.js'
 import './App.css'
 import ApiReview from './apiReview/ApiReview.js'
@@ -6,20 +6,22 @@ import ApiReview from './apiReview/ApiReview.js'
 // ffb900
 // #262834
 function App() {
-  const information = "This data was passed from parent to child, this is a container"
 
+
+  const firstReview = "This data was passed from parent to child, this is a container"
+  const thirdReview="Working on trying to pass data to a parent container"
   return (
     <>
     <div className='App'>
 
-      <h1>Welcome to my creation</h1>
+     
       <div className="middle">
         
-      <Review name ="Mohammad Hamzah Iqbal" info = {information}/>
+      <Review name ="Mohammad Hamzah Iqbal" info = {firstReview} changeColor ="true"/>
       <ApiReview />
       
-      <Review />
-
+      <Review name ="Equals" info={thirdReview} changeColor = "false" inputField = "true"/>
+      <Review name ="EMPTY" info="EMPTY" changeColor = "false" inputField = "false"/>
       </div>
 
 
