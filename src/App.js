@@ -17,11 +17,11 @@ function App() {
      
       <div className="middle">
         
-      <Review name ="Mohammad Hamzah Iqbal" info = {firstReview} changeColor ="true"/>
+      <Review name ="Mohammad Hamzah Iqbal" info = {firstReview} changeColor ="red"/>
       <ApiReview />
       
-      <Review name ="Equals" info={thirdReview} changeColor = "false" inputField = "true"/>
-      <Review name ="EMPTY" info="EMPTY" changeColor = "false" inputField = "false"/>
+      <Review name ="Equals" info={thirdReview} changeColor = "blue" inputField = "true"/>
+      
       </div>
 
 

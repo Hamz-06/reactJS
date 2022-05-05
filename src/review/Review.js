@@ -3,18 +3,23 @@ import './Review.css';
 
 function Review(props){
 
-    const[isYellow, isRed] = useState(false);
+    const[color, updateColor] = useState("review");
     
     function buttonClicked(){
         //review is created to change color else it doesnt 
-        if(props.changeColor==="true"){
-            //can be used as a toggle
-            isRed(!isYellow);
+        if(props.changeColor==="red"){
+            
+            updateColor("reviewRed");
+    
             return;
         }
         //check to see if input field is false
         //this will be used to enter
+        else if(props.changeColor==="blue"){
+            updateColor("reviewBlue")
+        }
     }
+  
     function checkInputField(inputField){
         if (inputField==="true"){
             return true;
@@ -25,7 +30,7 @@ function Review(props){
     }
     return(
         //change css class name allowing for style sheet to switch 
-        <div className={isYellow ? "reviewRed" : "review"}>
+        <div className={color}>
             
             <h1>{props.name}</h1>
             <p>{props.info}</p>

@@ -26,6 +26,7 @@ class ApiReview extends Component {
             this.setState({
                 price:response.data
             })
+            
         } catch (error) {
             console.error(error);
         }
@@ -51,6 +52,7 @@ class ApiReview extends Component {
                 <div className='review'>
                     <h1>API Request error</h1>
                     <p>If you are reading this most likely I have reached the limit of my API requests or my code failed</p>
+                    
                 </div>
             </>
             );
